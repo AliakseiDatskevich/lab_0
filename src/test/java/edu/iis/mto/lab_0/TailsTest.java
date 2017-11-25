@@ -36,4 +36,9 @@ public class TailsTest {
 		assertThat(tails.get(tails.size()-1), Matchers.equalTo(""));
 	}
 
+	@Test
+	public void tailsShouldReturnSpecialElement() {
+		
+		assertThat(tails.get((1)), Matchers.equalTo("ello"));
+	}
 }
